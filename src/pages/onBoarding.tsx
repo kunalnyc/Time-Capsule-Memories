@@ -1,19 +1,23 @@
 import React from 'react';
-import image1 from '../images/image1.jpg'; // Import the image
-import './style/onBoarding.css';
 import { Link } from 'react-router-dom';
+import './style/onBoarding.css';
 import './style/button.css';
-function OnboardingScreen() {
-  const imageCount = 5; // Number of images
-  const images = Array.from(Array(imageCount).keys()).map((index) => `image${index + 1}.jpg`);
 
+const images: string[] = [];
+const imageContext = (require as any).context('!!file-loader!../images', false, /\.(png|jpe?g|gif|svg|avif)$/);
+imageContext.keys().forEach((key: string) => {
+  images.push(imageContext(key).default);
+});
+
+
+function OnboardingScreen() {
   return (
     <div className="onboarding-container">
       <h1 className="welcome-heading">Welcome to Time Capsule</h1>
       <div className="image-container">
-        {images.map((image, index) => (
+        {images.map((image: string, index: number) => (
           <div className="image-wrapper" key={index}>
-            <img src={image1} alt={`Onboarding ${index + 1}`} className="onboarding-image" />
+            <img src={image} alt={`Onboarding ${index + 1}`} className="onboarding-image" />
             <div className="overlay"></div>
           </div>
         ))}
