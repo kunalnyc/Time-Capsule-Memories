@@ -1,9 +1,10 @@
 /* Button.css */
 
 .btn {
-    background-color: #4CAF50; /* Green background */
-    border: none;
-    color: white; /* White text */
+    background-color: whitesmoke; /* Green background */
+    border: 2px solid transparent; /* Add border property */
+    border-color: black;
+    color: black; /* White text */
     padding: 15px 32px; /* Padding */
     text-align: center;
     text-decoration: none;
@@ -13,9 +14,10 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 8px; /* Rounded corners */
-  }
+}
   
-  .btn:hover {
-    background-color: #45a049; /* Darker green */
-  }
-  
+.btn:hover {
+    background-color: black; /* Darker green */
+    border-color: yellow; /* Set border color */
+    color: whitesmoke;
+}

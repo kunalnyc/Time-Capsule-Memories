@@ -19,10 +19,10 @@ function OnboardingScreen() {
         ))}
       </div>
       <div>
-       <br></br>
-       <Link to="/HomeScreen">
-        <button className="btn">Get Started</button>
-      </Link>
+        <br></br>
+        <Link to="/home">
+          <button className="btn">Get Started</button>
+        </Link>
       </div>
     </div>
   );
