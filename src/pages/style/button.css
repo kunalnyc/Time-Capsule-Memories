@@ -1,11 +1,11 @@
 /* Button.css */
 
 .btn {
-    background-color: whitesmoke; /* Green background */
-    border: 2px solid transparent; /* Add border property */
+    background-color: whitesmoke;
+    border: 2px solid transparent;
     border-color: black;
-    color: black; /* White text */
-    padding: 15px 32px; /* Padding */
+    color: black;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -13,15 +13,36 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
+    position: relative; /* Add position relative for the pseudo element */
 }
-  
+
+/* Keyframes for animated RGB borders */
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(255, 0, 0); /* Red */
+    }
+    25% {
+        border-color: rgb(0, 255, 0); /* Green */
+    }
+    50% {
+        border-color: rgb(0, 0, 255); /* Blue */
+    }
+    75% {
+        border-color: rgb(255, 255, 0); /* Yellow */
+    }
+    100% {
+        border-color: rgb(255, 0, 255); /* Magenta */
+    }
+}
+
+/* Apply animation to button on hover */
 .btn:hover {
-    background-color: black; /* Darker green */
-    border-color: whitesmoke; /* Set border color */
+    animation: borderAnimation 2s infinite; /* Apply animation */
+    background-color: black;
     color: whitesmoke;
 }
-/* Add this CSS to target the body or a container */
+
 .btn:hover ~ body {
     background-color: peru;
 }
