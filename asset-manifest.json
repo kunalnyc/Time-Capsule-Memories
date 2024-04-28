@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Time-Capsule-Memories/static/css/main.329d8f08.css",
-    "main.js": "/Time-Capsule-Memories/static/js/main.ce9ff954.js",
+    "main.js": "/Time-Capsule-Memories/static/js/main.95963ebd.js",
     "static/js/592.bf7a4347.chunk.js": "/Time-Capsule-Memories/static/js/592.bf7a4347.chunk.js",
     "image2.avif": "/Time-Capsule-Memories/b6ee41c7b119b34182af6a5945645c21.avif",
     "image4.avif": "/Time-Capsule-Memories/6e647673436797d6b86d0ac7304cce54.avif",
     "image3.avif": "/Time-Capsule-Memories/108c45deee6e587028254155225cf130.avif",
     "index.html": "/Time-Capsule-Memories/index.html",
     "main.329d8f08.css.map": "/Time-Capsule-Memories/static/css/main.329d8f08.css.map",
-    "main.ce9ff954.js.map": "/Time-Capsule-Memories/static/js/main.ce9ff954.js.map",
+    "main.95963ebd.js.map": "/Time-Capsule-Memories/static/js/main.95963ebd.js.map",
     "592.bf7a4347.chunk.js.map": "/Time-Capsule-Memories/static/js/592.bf7a4347.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.329d8f08.css",
-    "static/js/main.ce9ff954.js"
+    "static/js/main.95963ebd.js"
   ]
 }
