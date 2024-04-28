@@ -3,9 +3,10 @@ import './App.css';
 import OnboardingScreen from './pages/onBoarding';
 import HomeScreen from './pages/HomeScreen'; // Import the HomeScreen component
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
-    <Router>
+    <Router basename="/Time-Capsule-Memories">
       <div className="App">
         <Routes>
           <Route path="/" element={<OnboardingScreen />} />
@@ -17,4 +18,3 @@ function App() {
 }
 
 export default App;
-
