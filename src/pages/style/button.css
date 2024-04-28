@@ -18,6 +18,10 @@
   
 .btn:hover {
     background-color: black; /* Darker green */
-    border-color: yellow; /* Set border color */
+    border-color: whitesmoke; /* Set border color */
     color: whitesmoke;
+}
+/* Add this CSS to target the body or a container */
+.btn:hover ~ body {
+    background-color: peru;
 }
