@@ -1,56 +1,73 @@
-/* onBoarding.css */
+/* Default styles */
 .onboarding-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f4f7; /* Set your background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f4f7; /* Set your background color */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.welcome-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Set your text color */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust spacing between images */
+}
+
+.image-wrapper {
+  position: relative;
+  width: 200px; /* Adjust width of the circular container */
+  height: 200px; /* Adjust height of the circular container */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.onboarding-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Media query for screens smaller than 600px (typical mobile screens) */
+@media screen and (max-width: 600px) {
+  .onboarding-container {
+      padding: 10px; /* Reduce padding for smaller screens */
   }
-  
+
   .welcome-heading {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333; /* Set your text color */
+      font-size: 24px; /* Decrease font size for smaller screens */
   }
-  
+
   .image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust spacing between images */
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      gap: 10px; /* Reduce spacing between images */
   }
-  
+
   .image-wrapper {
-    position: relative;
-    width: 200px; /* Adjust width of the circular container */
-    height: 200px; /* Adjust height of the circular container */
-    border-radius: 50%;
-    overflow: hidden;
+      width: 150px; /* Decrease width of circular container for smaller screens */
+      height: 150px; /* Decrease height of circular container for smaller screens */
   }
-  
-  .onboarding-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Add transition effect */
-  }
-  
-  .image-wrapper:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
-  }
-  body {
-    background-color: black;
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
 }
