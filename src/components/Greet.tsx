@@ -1,19 +1,23 @@
- import React from "react"
- type Greet = {
-    name: string
-    age: number
- }
- 
- function greet(name: string): string {
-    return `Hello, ${name}!`;
-}
+import React from "react";
 
-export const  GreetMessage = (props: Greet) => {
-   return (
-     <div>
-     <h2>Welcome {props.name}<br />Age = {props.age}</h2>
-    
-     </div>
-   )
-}
+type Greet = {
+    name: string;
+    _messageCount: number;
+    isLoggedin: boolean;
+};
+
+export const GreetMessage: React.FC<Greet> = (props) => {
+    return (
+        <div>
+
+            {props.isLoggedin ? (
+
+                <h2>Welcome, {props.name}! You have {props._messageCount} messages.</h2>
+            ) : (
+                <h2>Welcome Guest</h2>
+            )}
+        </div>
+    );
+};
+
 export default GreetMessage;

@@ -8,7 +8,7 @@ function HomeScreen() {
       <h1>Welcome to Time Capsule</h1>
       <p>This is the Home Screen</p>
       <div>
-        <GreetMessage name={'Kunal'} age={12}/>
+        <GreetMessage name={'Kunal'} _messageCount={20} isLoggedin={false}/>
       </div>
     </div>
   
