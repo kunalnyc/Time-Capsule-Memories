@@ -8,8 +8,6 @@ const imageContext = (require as any).context('!!file-loader!../images', false, 
 imageContext.keys().forEach((key: string) => {
   images.push(imageContext(key).default);
 });
-
-
 function OnboardingScreen() {
   return (
     <div className="onboarding-container">

@@ -1,3 +1,4 @@
+// GreetMessage.tsx
 import React from "react";
 
 type Greet = {
@@ -9,9 +10,7 @@ type Greet = {
 export const GreetMessage: React.FC<Greet> = (props) => {
     return (
         <div>
-
             {props.isLoggedin ? (
-
                 <h2>Welcome, {props.name}! You have {props._messageCount} messages.</h2>
             ) : (
                 <h2>Welcome Guest</h2>
@@ -19,5 +18,3 @@ export const GreetMessage: React.FC<Greet> = (props) => {
         </div>
     );
 };
-
-export default GreetMessage;

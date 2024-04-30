@@ -49,4 +49,8 @@
   .image-wrapper:hover .overlay {
     opacity: 1; /* Show overlay on hover */
   }
-  
+  body {
+    background-color: black;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}

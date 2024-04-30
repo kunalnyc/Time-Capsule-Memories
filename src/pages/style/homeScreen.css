@@ -1,7 +1,19 @@
 .home-container h2 {
     color: palevioletred;
 }
-
+.home-container h1 {
+    color: rgb(255, 16, 96);
+    font-family:cursive;
+}
+.home-container h3 {
+    color: yellow;
+    font-family:cursive;
+}
 .home-container :hover h2 {
     color: blueviolet;
+}
+body {
+    background-color: black;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
 }

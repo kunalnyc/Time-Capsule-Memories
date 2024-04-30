@@ -5,16 +5,16 @@ import { Person } from '../components/person';
 import './style/homeScreen.css';
 function HomeScreen() {
   const personNames = {
-    first : 'Kunal',
+    first: 'Kunal',
     last: 'California'
   }
   return (
     <div className="home-container">
       <h1>Welcome to Time Capsule</h1>
-      <h2>This is the Home Screen</h2>
+      <h3>This is the Home Screen</h3>
       <div>
         <GreetMessage name={'Kunal'} _messageCount={20} isLoggedin={false} />
-        <Person name = {personNames}  />
+        <Person name={personNames} />
       </div>
     </div>
 
