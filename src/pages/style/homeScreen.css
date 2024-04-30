@@ -1,0 +1,7 @@
+.home-container h2 {
+    color: palevioletred;
+}
+
+.home-container :hover h2 {
+    color: blueviolet;
+}
