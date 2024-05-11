@@ -4,6 +4,7 @@ import { GreetMessage } from '../components/Greet';
 import { Person } from '../components/person';
 import './style/homeScreen.css';
 import { PersonList } from '../components/person_list';
+import { Status } from '../components/status';
 function HomeScreen() {
   const personNames = {
     first: 'Kunal',
@@ -31,6 +32,7 @@ function HomeScreen() {
         <GreetMessage name={'Kunal'} _messageCount={20} isLoggedin={false} />
         <Person name={personNames} />
         <PersonList names={nameList}  />
+        <Status status='success' />
       </div>
     </div>
 
