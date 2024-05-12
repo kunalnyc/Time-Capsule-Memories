@@ -5,8 +5,9 @@ import { Person } from '../components/person';
 import './style/homeScreen.css';
 import { PersonList } from '../components/person_list';
 import { Status } from '../components/status';
-import { Heading } from '../components/heading';
-import { Oscar } from '../components/oscar';
+// import { Heading } from '../components/heading';
+// import { Oscar } from '../components/oscar';
+import { Button } from '../components/button';
 function HomeScreen() {
   const personNames = {
     first: 'Kunal',
@@ -35,10 +36,14 @@ function HomeScreen() {
         <Person name={personNames} />
         <PersonList names={nameList} />
         <Status status='success' />
-        <Heading>Heading Text</Heading>
+        <Button handleClickEvent={(event) =>
+          console.log('Hell o jio',event)
+
+        } />
+        {/* <Heading>Heading Text</Heading>
         <Oscar>
           <Heading>This is oscar</Heading>
-        </Oscar>
+        </Oscar> */}
       </div>
     </div>
 

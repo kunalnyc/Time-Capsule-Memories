@@ -4,7 +4,7 @@ import React from "react";
 type Greet = {
     name: string;
     _messageCount: number;
-    isLoggedin: boolean;
+    isLoggedin ?: boolean;
 };
 
 export const GreetMessage: React.FC<Greet> = (props) => {
