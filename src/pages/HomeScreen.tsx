@@ -5,25 +5,27 @@ import { Person } from '../components/person';
 import './style/homeScreen.css';
 import { PersonList } from '../components/person_list';
 import { Status } from '../components/status';
+import { Heading } from '../components/heading';
+import { Oscar } from '../components/oscar';
 function HomeScreen() {
   const personNames = {
     first: 'Kunal',
     last: 'California'
   }
- const nameList = [
-  {
-    first: 'Babe',
-    last: 'NYC'
-  },
-  {
-    first: 'Amanda',
-    last: 'Dimple'
-  },
-  {
-    first: 'Bruh',
-    last: 'Barbie'
-  },
- ]
+  const nameList = [
+    {
+      first: 'Babe',
+      last: 'NYC'
+    },
+    {
+      first: 'Amanda',
+      last: 'Dimple'
+    },
+    {
+      first: 'Bruh',
+      last: 'Barbie'
+    },
+  ]
   return (
     <div className="home-container">
       <h1>Welcome to Time Capsule</h1>
@@ -31,8 +33,12 @@ function HomeScreen() {
       <div>
         <GreetMessage name={'Kunal'} _messageCount={20} isLoggedin={false} />
         <Person name={personNames} />
-        <PersonList names={nameList}  />
+        <PersonList names={nameList} />
         <Status status='success' />
+        <Heading>Heading Text</Heading>
+        <Oscar>
+          <Heading>This is oscar</Heading>
+        </Oscar>
       </div>
     </div>
 
