@@ -9,6 +9,7 @@ import { Status } from '../components/status';
 // import { Oscar } from '../components/oscar';
 import { Button } from '../components/button';
 import { InputText } from '../components/input';
+import { Container } from '../components/container';
 function HomeScreen() {
   const personNames = {
     first: 'Kunal',
@@ -46,6 +47,7 @@ function HomeScreen() {
           <Heading>This is oscar</Heading>
         </Oscar> */}
         <InputText value='' onHandleChange={event => console.log(event)} />
+        <Container styles={{border: '1px solid black', padding: '1rem'}} />
       </div>
     </div>
 
