@@ -8,6 +8,7 @@ import { Status } from '../components/status';
 // import { Heading } from '../components/heading';
 // import { Oscar } from '../components/oscar';
 import { Button } from '../components/button';
+import { InputText } from '../components/input';
 function HomeScreen() {
   const personNames = {
     first: 'Kunal',
@@ -37,13 +38,14 @@ function HomeScreen() {
         <PersonList names={nameList} />
         <Status status='success' />
         <Button handleClickEvent={(event) =>
-          console.log('Hell o jio',event)
+          console.log('Hell o jio', event)
 
         } />
         {/* <Heading>Heading Text</Heading>
         <Oscar>
           <Heading>This is oscar</Heading>
         </Oscar> */}
+        <InputText value='' onHandleChange={event => console.log(event)} />
       </div>
     </div>
 
